@@ -185,7 +185,7 @@ void sim_report_energy( t_simulation* sim )
 
 	emf_get_energy( &sim -> emf, emf_energy );
 	double tot_emf = emf_energy[0];
-	for( i = 0; i < 6; i++ ){
+	for( i = 1; i < 6; i++ ){
 		tot_emf += emf_energy[i];
 	}
 
@@ -214,7 +214,7 @@ void sim_report_energy_ret( t_simulation* sim, double* energy )
 
 	emf_get_energy( &sim -> emf, emf_energy );
 	double tot_emf = emf_energy[0];
-	for( i = 0; i < 6; i++ ){
+	for( i = 1; i < 6; i++ ){
 		tot_emf += emf_energy[i];
 	}
 
